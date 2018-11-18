@@ -135,8 +135,9 @@ function genRss(site) {
 
 function genSummary(html) {
     
-    return html.slice(0, 100)
-        .replace(/<\/?[^>]+>/g, '') + '...'
+    return html
+        .replace(/<\/?[^>]+>/g, '')
+        .slice(0, 100) + '...'
     
 }
 
