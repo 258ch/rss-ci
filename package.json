@@ -9,6 +9,7 @@
         "cheerio": "*",
         "sync-request": "*",
         "ejs": "*",
-        "moment": "*"
+        "moment": "*",
+        "jszip": "<3.0.0"
     }
 }
