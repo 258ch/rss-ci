@@ -1,0 +1,14 @@
+{
+    "self": "",
+    "sites": [
+        {
+            "name": "thepaper",
+            "url": "https://www.thepaper.cn/",
+            "base": "https://www.thepaper.cn/",
+            "articles": "a[id^=clk]",
+            "content": ".news_txt",
+            "remove": "",
+            "epub": false
+        }
+    ]
+}

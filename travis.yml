@@ -1,0 +1,25 @@
+language: node_js
+node_js: node
+
+install:
+  - npm install
+    
+script:
+  - node index
+  
+after_script:
+  - cd out
+  - git init
+  - git config user.name ${GH_UN}
+  - git config user.email ${GH_EMAIL}
+  - git add -A
+  - git commit -am "$(date "+%Y-%m-%d %H:%M:%S")"
+  - git push "https://${GH_TOKEN}@github.com/${GH_USER}/${GH_REPO}.git" master:${GH_BRANCH} -f
+
+env:
+  global:
+    - GH_UN=wizardforcel
+    - GH_EMAIL=562826179@qq.com
+    - GH_USER=258ch
+    - GH_REPO=rss-ci
+    - GH_BRANCH=gh-pages

@@ -1,0 +1,14 @@
+{
+    "name": "RSS-CI",
+    "version": "1.0.0",
+    "description": "a CI based RSS generator",
+    "author": "wizardforcel",
+    "repository": "https://github.com/258ch/rss-ci",
+    "license": "MIT",
+    "dependencies": {
+        "cheerio": "*",
+        "sync-request": "*",
+        "ejs": "*",
+        "moment": "*"
+    }
+}
