@@ -11,7 +11,8 @@ var config = JSON.parse(fs.readFileSync('config.json', 'utf-8'))
 
 function request(url) {
 
-    return req('GET', url).getBody().toString();
+    return req('GET', url, {headers: config.headers})
+        .getBody().toString()
 }
 
 function getToc(html, site)  {
